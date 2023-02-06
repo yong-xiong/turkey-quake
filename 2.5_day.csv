@@ -1,0 +1,54 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2023-02-06T04:47:57.486Z,36.7445,36.4537,10,4.4,mb,48,148,0.741,1.13,us,us6000jlns,2023-02-06T05:09:29.040Z,"8 km SW of Hassa, Turkey",earthquake,3.53,1.92,0.106,26,reviewed,us,us
+2023-02-06T04:24:22.499Z,57.8489,-156.7557,144.6,2.6,ml,,,,0.16,ak,ak0231p9erm1,2023-02-06T04:52:03.040Z,"53 km NE of Ugashik, Alaska",earthquake,,0.5,,,automatic,ak,ak
+2023-02-06T04:18:46.788Z,38.2034,38.5363,14.464,5,mb,95,44,1.472,0.86,us,us6000jlnf,2023-02-06T04:59:50.111Z,"eastern Turkey",earthquake,6.57,4.287,0.057,99,reviewed,us,us
+2023-02-06T04:16:49.487Z,37.5032,37.3323,13.215,4.5,mb,57,74,0.345,0.76,us,us6000jlnd,2023-02-06T04:39:00.585Z,"3 km ENE of Pazarcık, Turkey",earthquake,5.37,5.371,0.093,34,reviewed,us,us
+2023-02-06T04:04:23.657Z,37.7879,37.4088,14.137,4.3,mb,39,106,0.635,0.58,us,us6000jlnc,2023-02-06T04:20:28.040Z,"11 km ENE of Çağlayancerit, Turkey",earthquake,6.11,5.858,0.109,24,reviewed,us,us
+2023-02-06T03:45:48.563Z,38.1983,38.5977,15.415,4.8,mb,97,66,1.504,0.75,us,us6000jln9,2023-02-06T04:33:27.159Z,"18 km N of Sincik, Turkey",earthquake,5.44,4.074,0.07,63,reviewed,us,us
+2023-02-06T03:32:15.796Z,26.4267,125.9658,126.894,4.2,mb,23,84,2.105,0.6,us,us6000jln4,2023-02-06T03:54:08.040Z,"northeast of Taiwan",earthquake,3.73,10.47,0.215,6,reviewed,us,us
+2023-02-06T03:28:46.802Z,38.0757,38.5607,15.951,4.4,mb,26,145,1.402,0.58,us,us6000jln5,2023-02-06T04:23:56.040Z,"6 km NW of Sincik, Turkey",earthquake,5.98,5.029,0.149,13,reviewed,us,us
+2023-02-06T03:04:45.466Z,38.1844,38.4761,17.922,4.7,mb,91,66,1.425,0.86,us,us6000jln0,2023-02-06T03:36:13.040Z,"20 km NW of Sincik, Turkey",earthquake,6.21,4.213,0.067,67,reviewed,us,us
+2023-02-06T02:59:46.780Z,40.4551659,-124.0111694,22.49,2.52,md,15,199,0.09184,0.13,nc,nc73842451,2023-02-06T05:16:13.918Z,"9km ESE of Rio Dell, CA",earthquake,0.91,0.73,0.19,10,automatic,nc,nc
+2023-02-06T02:55:55.570Z,18.0456666666667,-66.791,12.8,2.74,md,16,141,0.1095,0.13,pr,pr71395498,2023-02-06T03:45:09.660Z,"2 km N of Guayanilla, Puerto Rico",earthquake,0.28,0.45,0.0775088971766205,7,reviewed,pr,pr
+2023-02-06T02:54:00.615Z,36.6379,36.3874,10,4.6,mb,87,72,0.848,1,us,us6000jlmv,2023-02-06T04:57:12.221Z,"15 km E of Denizciler, Turkey",earthquake,6.37,1.884,0.064,74,reviewed,us,us
+2023-02-06T02:30:54.240Z,19.2628326416016,-155.40299987793,28.8700008392334,3,ml,49,124,,0.150000006,hv,hv73320042,2023-02-06T04:32:45.099Z,"10 km NE of Pāhala, Hawaii",earthquake,0.6,0.74000001,3.24,31,automatic,hv,hv
+2023-02-06T02:23:14.645Z,37.2035,36.9702,11.411,5.2,mb,107,36,0.194,0.81,us,us6000jlmn,2023-02-06T03:22:25.602Z,"21 km E of Nurdağı, Turkey",earthquake,5.15,4.282,0.061,88,reviewed,us,us
+2023-02-06T02:22:27.497Z,-30.9906,-177.112,10,5.1,mb,18,208,1.86,0.5,us,us6000jlmq,2023-02-06T03:15:19.040Z,"Kermadec Islands, New Zealand",earthquake,10.71,1.944,0.158,13,reviewed,us,us
+2023-02-06T02:17:40.302Z,37.0791,36.6898,10,4.8,mb,39,191,0.426,0.69,us,us6000jlmm,2023-02-06T02:51:13.040Z,"10 km SSW of Nurdağı, Turkey",earthquake,3.45,1.957,0.1,31,reviewed,us,us
+2023-02-06T02:15:37.862Z,63.1366,-149.9027,66.3,3.1,ml,,,,0.68,ak,ak0231p86056,2023-02-06T04:21:56.744Z,"Central Alaska",earthquake,,0.9,,,automatic,ak,ak
+2023-02-06T02:03:36.258Z,37.7769,37.9199,10,5.5,mb,64,45,0.827,0.8,us,us6000jlmh,2023-02-06T04:51:26.411Z,"2 km S of Tut, Turkey",earthquake,5.18,1.806,0.055,114,reviewed,us,us
+2023-02-06T02:01:45.663Z,37.3549,37.0939,10.358,4.8,mb,53,81,0.204,0.9,us,us6000jlmy,2023-02-06T03:14:00.040Z,"23 km SW of Pazarcık, Turkey",earthquake,4.9,4.435,0.089,39,reviewed,us,us
+2023-02-06T01:58:23.594Z,37.1023,36.6056,10,5.1,mb,65,121,0.488,0.72,us,us6000jlmf,2023-02-06T02:48:59.040Z,"6 km ESE of Hasanbeyli, Turkey",earthquake,6.15,1.867,0.072,62,reviewed,us,us
+2023-02-06T01:36:28.018Z,37.0175,36.7443,10,5.6,mb,87,75,1.964,1.19,us,us6000jlm9,2023-02-06T03:40:55.136Z,"16 km S of Nurdağı, Turkey",earthquake,6.22,1.783,0.042,196,reviewed,us,us
+2023-02-06T01:28:13.791Z,37.134,37.1852,12.23,6.7,mww,93,46,0.043,1,us,us6000jlm1,2023-02-06T05:12:51.692Z,"19 km WNW of Gaziantep, Turkey",earthquake,7.46,5.263,0.098,10,reviewed,us,us
+2023-02-06T01:26:49.248Z,37.0538,37.086,17.004,5.6,mb,64,124,0.154,0.81,us,us6000jlnn,2023-02-06T04:54:57.943Z,"23 km NE of Musabeyli, Turkey",earthquake,5.59,4.868,0.087,47,reviewed,us,us
+2023-02-06T01:17:35.796Z,37.1736,37.032,17.925,7.8,mww,118,32,1.919,1.06,us,us6000jllz,2023-02-06T05:17:11.596Z,"26 km E of Nurdağı, Turkey",earthquake,5.83,3.676,0.05,38,reviewed,us,us
+2023-02-06T01:17:15.930Z,18.1371666666667,-67.099,12.01,2.47,md,7,173,0.1304,0.17,pr,pr71395493,2023-02-06T02:16:42.770Z,"3 km E of Hormigueros, Puerto Rico",earthquake,0.74,0.92,0.214854367960386,6,reviewed,pr,pr
+2023-02-06T01:04:47.479Z,53.0156,-167.4076,15.3,3.6,ml,,,,0.65,ak,ak0231p7i8i6,2023-02-06T04:00:43.466Z,"98 km E of Nikolski, Alaska",earthquake,,0.5,,,reviewed,ak,ak
+2023-02-06T00:27:24.108Z,40.4281,-126.2056,15.583,3,ml,27,252,1.592,0.94,us,us6000jlls,2023-02-06T02:54:59.589Z,"165 km W of Ferndale, California",earthquake,9.28,9.238,0.05,52,reviewed,us,us
+2023-02-05T23:55:48.710Z,35.7463341,-121.2559967,4.75,2.59,md,39,181,0.105,0.13,nc,nc73842386,2023-02-06T02:22:15.885Z,"13km NNW of San Simeon, CA",earthquake,0.44,1.03,0.07,35,automatic,nc,nc
+2023-02-05T23:01:55.340Z,19.3065,-65.9301666666667,26.72,3.16,md,11,288,1.001,0.21,pr,pr71395473,2023-02-05T23:17:43.680Z,"Puerto Rico region",earthquake,1.16,16.63,0.0427091811937261,5,reviewed,pr,pr
+2023-02-05T22:43:11.315Z,53.1485,-164.5059,30.208,3.2,ml,28,233,1.243,0.49,us,us6000jllk,2023-02-06T00:02:50.446Z,"138 km SE of Akutan, Alaska",earthquake,5.11,13.873,0.091,16,reviewed,us,us
+2023-02-05T22:25:46.115Z,59.0944,-151.7411,32.9,2.5,ml,,,,0.77,ak,ak0231nwlhjn,2023-02-05T23:45:10.040Z,"29 km S of Port Graham, Alaska",earthquake,,0.4,,,automatic,ak,ak
+2023-02-05T21:58:49.467Z,27.208,143.4892,10,4.7,mb,41,137,10.329,0.77,us,us6000jllc,2023-02-05T22:56:47.040Z,"Bonin Islands, Japan region",earthquake,12.32,1.901,0.078,50,reviewed,us,us
+2023-02-05T21:40:40.408Z,18.3847,145.3101,538.6,4.3,mb,57,75,4.787,0.36,us,us6000jll6,2023-02-05T22:17:07.040Z,"Pagan region, Northern Mariana Islands",earthquake,12.48,8.017,0.048,122,reviewed,us,us
+2023-02-05T21:25:38.390Z,19.2603340148926,-155.417007446289,32.0299987792969,2.57,ml,46,137,,0.140000001,hv,hv73319902,2023-02-05T22:00:50.040Z,"9 km NE of Pāhala, Hawaii",earthquake,0.55,0.660000026,2.44,14,automatic,hv,hv
+2023-02-05T20:35:47.576Z,60.2198,-153.3122,162.2,2.9,ml,,,,0.5,ak,ak0231nvgrjn,2023-02-05T20:54:44.040Z,"55 km E of Port Alsworth, Alaska",earthquake,,0.6,,,automatic,ak,ak
+2023-02-05T20:27:44.840Z,18.911,-68.4868,30,3.65,md,14,162,0.4108,0.67,pr,pr2023036000,2023-02-05T21:27:22.650Z,"34 km NNE of Otra Banda, Dominican Republic",earthquake,4.5,11.9,0.09,8,reviewed,pr,pr
+2023-02-05T18:31:33.231Z,59.7158,-153.0799,21.5,3.2,ml,,,,0.23,ak,ak0231nu90ff,2023-02-05T19:40:57.040Z,"58 km E of Pedro Bay, Alaska",earthquake,,0.2,,,automatic,ak,ak
+2023-02-05T15:56:55.140Z,19.2025,-66.6398333333333,21.32,3.22,md,17,259,0.7291,0.21,pr,pr71395448,2023-02-05T16:34:00.580Z,"81 km N of Arecibo, Puerto Rico",earthquake,0.97,15.16,0.0810653894104467,10,reviewed,pr,pr
+2023-02-05T14:46:39.336Z,44.4418,-114.5757,10,2.7,ml,19,69,0.689,0.76,us,us6000jlk5,2023-02-05T17:26:37.040Z,"southern Idaho",earthquake,1.58,1.996,0.066,30,reviewed,us,us
+2023-02-05T14:36:37.320Z,19.3168334960938,-155.364837646484,13.4799995422363,2.62,ml,24,210,,0.330000013,hv,hv73319752,2023-02-05T14:42:09.080Z,"17 km NE of Pāhala, Hawaii",earthquake,1.71,0.569999993,0.24,8,automatic,hv,hv
+2023-02-05T14:36:27.460Z,19.058666229248,-155.404495239258,34.9199981689453,2.98,ml,44,236,,0.119999997,hv,hv73319747,2023-02-05T17:38:03.863Z,"17 km SSE of Pāhala, Hawaii",earthquake,0.54,0.910000026,3.03,25,automatic,hv,hv
+2023-02-05T12:58:22.835Z,48.9436,157.3246,48.287,4.5,mb,45,136,4.17,0.33,us,us6000jljv,2023-02-05T13:17:08.040Z,"211 km SSE of Severo-Kuril’sk, Russia",earthquake,9.95,7.22,0.091,36,reviewed,us,us
+2023-02-05T12:06:31.705Z,-22.2335,-179.5812,569.43,4.5,mb,39,92,4.207,0.99,us,us6000jljt,2023-02-05T12:26:11.040Z,"south of the Fiji Islands",earthquake,13.85,8.196,0.088,38,reviewed,us,us
+2023-02-05T12:02:59.166Z,59.7758,-153.971,180.6,2.7,ml,,,,0.55,ak,ak0231nqi918,2023-02-05T12:06:24.821Z,"7 km E of Pedro Bay, Alaska",earthquake,,2,,,automatic,ak,ak
+2023-02-05T11:44:33.470Z,17.9413333333333,-66.9763333333333,10.69,2.65,md,20,197,0.07041,0.11,pr,pr71395428,2023-02-05T12:07:00.570Z,"7 km WSW of Guánica, Puerto Rico",earthquake,0.29,0.25,0.151857824194833,9,reviewed,pr,pr
+2023-02-05T10:51:08.266Z,-6.7569,129.6499,165.058,4.4,mb,22,89,2.039,0.32,us,us6000jlji,2023-02-05T11:14:35.040Z,"Banda Sea",earthquake,11.02,10.037,0.139,15,reviewed,us,us
+2023-02-05T10:31:32.297Z,-24.2996,-67.2368,179.294,4.7,mb,46,43,1.596,0.7,us,us6000jljf,2023-02-05T10:55:00.040Z,"93 km W of San Antonio de los Cobres, Argentina",earthquake,3.46,7.08,0.112,24,reviewed,us,us
+2023-02-05T09:59:20.797Z,7.7321,126.0821,13.569,4.7,mb,55,87,0.826,0.51,us,us6000jlje,2023-02-05T10:50:38.391Z,"Mindanao, Philippines",earthquake,7.2,4.5,0.07,61,reviewed,us,us
+2023-02-05T09:06:30.636Z,16.8186,-99.6767,25.046,4.5,mb,46,129,1.294,0.38,us,us6000jljd,2023-02-06T01:34:09.697Z,"0 km WNW of San Pedro Cacahuatepec, Mexico",earthquake,7.34,4.886,0.091,35,reviewed,us,us
+2023-02-05T08:17:41.840Z,19.2315006256104,-155.390502929688,30.7199993133545,2.52,ml,46,145,,0.140000001,hv,hv73319587,2023-02-05T10:47:50.785Z,"9 km ENE of Pāhala, Hawaii",earthquake,0.62,0.649999976,3.84,12,automatic,hv,hv
+2023-02-05T07:55:56.574Z,55.4293,-157.6786,147.9,3,ml,,,,0.8,ak,ak0231nnufrd,2023-02-05T08:11:42.040Z,"106 km SSE of Chignik, Alaska",earthquake,,1.8,,,automatic,ak,ak
+2023-02-05T07:08:46.590Z,-32.7405,-71.7352,30.921,4,mb,32,134,0.291,0.53,us,us6000jliv,2023-02-05T12:11:54.647Z,"34 km NNW of Valparaíso, Chile",earthquake,5.07,5.149,0.21,8,reviewed,us,us
+2023-02-05T07:01:49.293Z,44.4237,-115.2359,10,2.5,ml,9,83,0.731,0.47,us,us6000jlit,2023-02-05T10:56:30.908Z,"32 km NW of Stanley, Idaho",earthquake,2.06,2.012,0.07,27,reviewed,us,us
