@@ -5,6 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
+2.5_day.csv
 
 # Distribution / packaging
 .Python
