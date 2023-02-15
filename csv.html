@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .row{
+      display: flex;
+      text-align: center;
+    }
+    .span {
+      flex: 1;
+      outline: 1px solid #999;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr id="head">
+  
+      </tr>
+    </thead>
+    <tbody id="body">
+
+    </tbody>
+  </table>
+  <div id="content">
+
+  </div>
+  <script>
+    fetch('./turkey_mag_stats.csv')
+      .then(response => response.text())
+      .then(text => {
+        const arr1 = text.split('\n')
+        const arr2 = arr1.map((item, index) => item.split(','))
+        const content = document.getElementById('content')
+        content.innerHTML = arr2.map(i => `
+          <div class="row">
+            ${i.map(j => `<span class="span">${j}</span>`).join('')}
+          </div>
+        `).join('') 
+      })
+  </script>
+</body>
+</html>
