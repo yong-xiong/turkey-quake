@@ -20,6 +20,20 @@
       <p class="subtitle">
         xxxxxxx
       </p>
+      <script>
+        fetch('./turkey_mag_stats.csv')
+          .then(response => response.text())
+          .then(text => {
+            const arr1 = text.split('\n')
+            const arr2 = arr1.map((item, index) => item.split(','))
+            const content = document.getElementById('content')
+            content.innerHTML = arr2.map(i => `
+              <div class="row">
+                ${i.map(j => `<span class="span">${j}</span>`).join('')}
+              </div>
+            `).join('') 
+          })
+      </script>
       <iframe title="The Magnitude 7.8 Quake and Aftershocks in Turkey" aria-label="Map" id="datawrapper-chart-ai6M2" src="https://datawrapper.dwcdn.net/ai6M2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="370" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
       </script>
 
