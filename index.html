@@ -13,6 +13,13 @@
             /* Remove the line below if you want a wider page */
             max-width: 760px !important;
         }
+        .table{
+          width: 500px !important;
+        }
+        .table td{
+          width: 250px;
+          border: 1px solid #ccc !important;
+        }
     </style>
   <body>
   <section class="section">
@@ -25,7 +32,7 @@
         
         <div id="map"></div>
           <style>
-          .#map {
+          #map {
             height: 180px;
             height: 100%;
           } 
@@ -39,17 +46,36 @@
   
         </div>
           <script>
-            fetch('./turkey_mag_stats.csv')
-              .then(response => response.text())
-              .then(text => {
-                const arr1 = text.split('\n')
-                const arr2 = arr1.map((item, index) => item.split(','))
-                const content = document.getElementById('content')
-                content.innerHTML = arr2.map(i => `
-                  <div class="row">
-                    ${i.map(j => `<span class="span">${j}</span>`).join('')}
-                  </div>
-                `).join('') 
+            fetch('./turkey_mag_stats.json')
+              .then(res => res.json())
+              .then(res => {
+                console.log(111);
+                const data = res
+                const el = document.getElementById('content')
+                console.log(el);
+                el.innerHTML = `
+                  <h2>earthquake and sftershocks statistics</h2>
+                  <table class="table">
+                    <tr>
+                      <td>MagnitudeAbove7</td>
+                      <td>${data.MagnitudeAbove7}</td>
+                    </tr>
+                    <tr>
+                      <td>Magnitude6_7</td>
+                      <td>${data.Magnitude6_7}</td>
+                    </tr>  
+                    <tr>
+                      <td>Magnitude5_6</td>
+                      <td>${data.Magnitude5_6}</td>
+                    </tr>  
+                    <tr>
+                      <td>Magnitude4_5</td>
+                      <td>${data.Magnitude4_5}</td>
+                    </tr>  
+                  </table>
+                  <p>The data was last updated at: ${data.LastUpdateTime}</p>
+                `
+
               })
           </script>
       </div>
@@ -74,20 +100,6 @@
 
       <div id="content">
       </div>
-        <script>
-          fetch('./turkey_mag_stats.csv')
-            .then(response => response.text())
-            .then(text => {
-              const arr1 = text.split('\n')
-              const arr2 = arr1.map((item, index) => item.split(','))
-              const content = document.getElementById('content')
-              content.innerHTML = arr2.map(i => `
-                <div class="row">
-                  ${i.map(j => `<span class="span">${j}</span>`).join('')}
-                </div>
-              `).join('') 
-            })
-        </script>
 
        <p></p><br>
 

@@ -1,1 +1,7 @@
-{"LastUpdateTime":{"0":"2023-02-16 00:49:54"},"MagnitudeAbove7":{"0":2},"Magnitude6_7":{"0":3},"Magnitude5_6":{"0":27},"Magnitude4_5":{"0":181}}
+{
+  "LastUpdateTime": "2023-02-16 00:49:54",
+  "MagnitudeAbove7": 2,
+  "Magnitude6_7": 3,
+  "Magnitude5_6": 27,
+  "Magnitude4_5": 181
+}
