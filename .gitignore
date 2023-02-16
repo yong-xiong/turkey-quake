@@ -29,6 +29,7 @@ share/python-wheels/
 MANIFEST
 
 quake_turkey_mag_4.5plus.csv
+2.5_day.csv
 .DS_Store
 
 # PyInstaller
