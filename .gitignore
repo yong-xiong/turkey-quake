@@ -28,6 +28,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+quake_turkey_mag_4.5plus.csv
 .DS_Store
 
 # PyInstaller

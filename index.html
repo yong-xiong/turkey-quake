@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Turkey earthquake and sftershocks count</title>
@@ -19,6 +22,15 @@
       </h1>
       <div class="content">
         <p>xxxxxx</p>
+        
+        <div id="map"></div>
+          <style>
+          .#map {
+            height: 180px;
+            height: 100%;
+          } 
+          </style>
+
         <p>xxxxx</p>
         <div class="content">
           <p>xxxxxx.</p>
@@ -81,7 +93,10 @@
 
         <p>Visit GitHub to find out the original data for this report: <a class='links' href="https://github.com/yong-xiong/turkey-quake" target="_blank">github.com/yong-xiong/turkey-quake</a>.</p>
       </div>
-  
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""></script>
+ 
     </div>
   </section>
   </body>
