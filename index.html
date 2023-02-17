@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>    
+    
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="docs/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +18,14 @@
           width: 500px !important;
         }
         .table td{
-          width: 250px;
+          width: 240px;
           border: 1px solid #ccc !important;
+          margin: 20px, 0;
+          font-size: 1.2 em;
+          border-collapse: collapse;
         }
     </style>
+  </head>
   <body>
   <section class="section">
     <div class="container">
@@ -29,15 +33,50 @@
         Turkey earthquake and aftershocks count
       </h1>
       <div class="content">
+        <p>first paragraph</p>
         <p>xxxxxx</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
+
         
-        <div id="map"></div>
-          <style>
-          #map {
-            height: 180px;
-            height: 100%;
-          } 
-          </style>
+        <div id="map" style="height: 450px;"></div>
+        <script>
+          var mymap = L.map('map').setView([37.1736, 37.0320], 6);
+          var geojsonLayer = L.geoJson().addTo(mymap);
+      
+          var request = new XMLHttpRequest();
+          request.open('GET', 'https://raw.githubusercontent.com/yong-xiong/turkey-quake/main/quake_list_turkey.json', true);
+
+          request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+              // Success!
+              var data = JSON.parse(request.responseText);
+              // Call a function to extract the coordinates from the data
+              extractCoordinates(data);
+            } else {
+              // We reached our target server, but it returned an error
+              console.log("Error loading JSON file");
+            }
+          };
+
+          request.onerror = function() {
+            // There was a connection error of some sort
+            console.log("Error loading JSON file");
+          };
+
+          request.send();
+
+          function extractCoordinates(data) {
+            for (var i = 0; i < data.length; i++) {
+              var latitude = data[i].latitude;
+              var longitude = data[i].longitude;
+              // Do something with the latitude and longitude values
+              console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+            }
+          }
+
+        </script>
 
         <p>xxxxx</p>
         <div class="content">
@@ -53,7 +92,7 @@
                 const data = res
                 const el = document.getElementById('content')
                 el.innerHTML = `
-                  <h2>earthquake and aftershocks statistics</h2>
+                  <h2>Earthquake and aftershocks statistics</h2>
                   <table class="table">
                     <tr>
                       <td>Magnitude 7.0 and above </td>
@@ -78,24 +117,36 @@
               })
           </script>
       </div>
+      <p>xxxxxx</p>
+      <p>xxxxxx</p>
+      <p>xxxxxx</p>
+
+
 
       <p class="subtitle">
-        xxxxxxx
+        xxxxxxx subtitle xxxxxx
       </p>
 
-      <iframe title="The Magnitude 7.8 Quake and Aftershocks in Turkey" aria-label="Map" id="datawrapper-chart-ai6M2" src="https://datawrapper.dwcdn.net/ai6M2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="370" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+      <iframe title="The magnitude 7.8 quake and aftershocks in Turkey" aria-label="Map" id="datawrapper-chart-ai6M2" src="https://datawrapper.dwcdn.net/ai6M2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="370" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
       </script>
 
       <div class="content">
-        <p>xxxxxx
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
 
-          <iframe title="Aftershocks after the Magnitude 7.8 Earthquake in Turkey" aria-label="Scatter Plot" id="datawrapper-chart-132d1" src="https://datawrapper.dwcdn.net/132d1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="579" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+
+          <iframe title="Aftershocks after the magnitude 7.8 earthquake in Turkey" aria-label="Scatter Plot" id="datawrapper-chart-132d1" src="https://datawrapper.dwcdn.net/132d1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="579" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
 
       </div>
     
       <div class="content">
         <p>xxxxxx.</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
+        <p>xxxxxx</p>
 
       <div id="content">
       </div>
@@ -107,7 +158,7 @@
       <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
       crossorigin=""></script>
- 
+
     </div>
   </section>
   </body>
