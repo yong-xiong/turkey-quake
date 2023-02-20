@@ -10,5 +10,5 @@ While it’s normal for aftershocks to occur after a major earthquake, the frequ
 # Data Source
 This project uses data from the [USGS](https://earthquake.usgs.gov/earthquakes/map/?extent=30.88337,-690.84229&extent=43.2452,-674.09912&range=week&settings=true) website and automatically calculates the aftershock statistics.
 
-
+# Project Website
 Website address: https://yong-xiong.github.io/turkey-quake/
