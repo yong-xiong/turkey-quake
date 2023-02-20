@@ -2,12 +2,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>    
-    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 450px;
+            width: 700px;
+        }
+    </style>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="docs/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Turkey earthquake and sftershocks count</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
         .container {
@@ -33,55 +39,16 @@
         Turkey earthquake and aftershocks count
       </h1>
       <div class="content">
-        <p>first paragraph</p>
-        <p>xxxxxx</p>
-        <p>xxxxxx</p>
-        <p>xxxxxx</p>
-        <p>xxxxxx</p>
+        <p>Since the magnitude 7.8 earthquake struck southern and central Turkey early on the morning of February 6th, nearly 50,000 people have been killed in what is now the deadliest earthquake in the country's modern history.</p>
+        <p>Only ten minutes after the initial earthquake, a magnitude 6.7 aftershock hit central Turkey and caused panic while people were still figuring out what had happened earlier that morning.</p>
+        <p>Less than ten hours later, a subsequent magnitude 7.6 earthquake rocked the area less than 100km away from the city of Gaziantep, where the first shock was felt, causing further damage and casualties. Videos on social media showed buildings collapsing in front of rescuers' eyes.</p>
+        <center><img src="img/turkey-earthquake-GettyImages-1246887248.jpg" alt="The earthquake happened at Turkey-Syria border caused mass destruction and left tens of thousands dead." style="width:600px;"><figcaption><i>The earthquake happened at Turkey-Syria border caused mass destruction and left tens of thousands dead. (Image Source: Getty Image)</i>
+        </figcaption></center>
+        <p></p>
+        <p>While it's normal for aftershocks to occur after a major earthquake, the frequency and intensity of subsequent quakes and aftershocks in the Turkey-Syria earthquake are rare.</p>
+        <p>To keep a regularly updated list of aftershock counts in this earthquake for the newsroom, this project utilizes data from the <a href="https://earthquake.usgs.gov/earthquakes/map/?extent=30.88337,-690.84229&extent=43.2452,-674.09912&range=week&settings=true" target="_blank">United States Geological Survey (USGS)</a> website and automatically calculates the aftershock statistics.</p>
+        <!-- <p>Here is the current auto-updated earthquake and aftershock counts:</p> -->
 
-        
-        <div id="map" style="height: 450px;"></div>
-        <script>
-          var mymap = L.map('map').setView([37.1736, 37.0320], 6);
-          var geojsonLayer = L.geoJson().addTo(mymap);
-      
-          var request = new XMLHttpRequest();
-          request.open('GET', 'https://raw.githubusercontent.com/yong-xiong/turkey-quake/main/quake_list_turkey.json', true);
-
-          request.onload = function() {
-            if (request.status >= 200 && request.status < 400) {
-              // Success!
-              var data = JSON.parse(request.responseText);
-              // Call a function to extract the coordinates from the data
-              extractCoordinates(data);
-            } else {
-              // We reached our target server, but it returned an error
-              console.log("Error loading JSON file");
-            }
-          };
-
-          request.onerror = function() {
-            // There was a connection error of some sort
-            console.log("Error loading JSON file");
-          };
-
-          request.send();
-
-          function extractCoordinates(data) {
-            for (var i = 0; i < data.length; i++) {
-              var latitude = data[i].latitude;
-              var longitude = data[i].longitude;
-              // Do something with the latitude and longitude values
-              console.log("Latitude: " + latitude + ", Longitude: " + longitude);
-            }
-          }
-
-        </script>
-
-        <p>xxxxx</p>
-        <div class="content">
-          <p>xxxxxx.</p>
-          
         <div id="content">
   
         </div>
@@ -92,7 +59,7 @@
                 const data = res
                 const el = document.getElementById('content')
                 el.innerHTML = `
-                  <h2>Earthquake and aftershocks statistics</h2>
+                  <h3>Here is the current auto-updated earthquake and aftershock counts:</h3>
                   <table class="table">
                     <tr>
                       <td>Magnitude 7.0 and above </td>
@@ -111,11 +78,42 @@
                       <td>${data.Magnitude4_5[0]}</td>
                     </tr>  
                   </table>
-                  <p>The data was last updated at: ${data.LastUpdateTime[0]}</p>
+                  <p>The data was last updated at: <FONT COLOR="red">${data.LastUpdateTime[0]}  <FONT COLOR=None>Eastern Time</p>
                 `
 
               })
           </script>
+          </div>
+              <div class="content">
+              <p>The system was designed to fetch data from the USGS website every two hours and automatically display the statistics of the aftershocks, draw the location of the earthquake on a map, and generate a chart to depict the aftershock activity.</p>
+              <p>xxxxxx.</p>
+              <p>xxxxxx.</p>
+              </div>
+              <div id="map"></div>
+
+              <script>
+                  // Create a new LeafletJS map object and set its initial view
+                  var mymap = L.map('map').setView([37.1736, 37.0320], 6);
+          
+                  // Add a tile layer to the map
+                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                      maxZoom: 18,
+                  }).addTo(mymap);
+          
+                  // Load the GeoJSON data from the URL using AJAX
+                  var geojsonLayer = new L.GeoJSON.AJAX("map_turkey.geojson");
+          
+                  // Add the GeoJSON data to the map
+                  geojsonLayer.addTo(mymap);
+              </script>
+
+      
+
+          <p>xxxxx</p>
+          <div class="content">
+            <p>xxxxxx.</p>
+    
       </div>
       <p>xxxxxx</p>
       <p>xxxxxx</p>

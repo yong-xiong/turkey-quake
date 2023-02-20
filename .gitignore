@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 2.5_day.csv
-
+test.html
 # Distribution / packaging
 .Python
 build/
