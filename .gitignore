@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+gis/
 # C extensions
 *.so
 2.5_day.csv
