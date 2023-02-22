@@ -2,7 +2,7 @@ name: publish
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '* */1200 * 10 *'
   push:
 jobs:
   publish:
